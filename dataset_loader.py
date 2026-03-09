@@ -3,7 +3,7 @@ from datasets import load_dataset
 
 def load_nb_dataset(limit=10000, min_len=20):
     
-    dataset = load_datasets("NbAiLab/nbnn_language_detection")
+    dataset = load_dataset("NbAiLab/nbnn_language_detection")
 
     texts = []
     labels = []
