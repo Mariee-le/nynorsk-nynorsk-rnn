@@ -42,7 +42,7 @@ for step in range(3000):
     text_sample = texts[i]
     lang = labels[i]
 
-    x = text_tensor(text)
+    x = text_tensor(text_sample)
     y = torch.tensor([languages.index(lang)])
 
     out = model(x)
