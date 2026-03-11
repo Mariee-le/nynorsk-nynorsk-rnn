@@ -4,7 +4,7 @@ from model import CharRNN
 
 languages = ["nno", "nob"]
 
-model = torch.load("model.pt")
+model = torch.load("model.pt", weights_only=False)
 
 
 def build_vocab(text):
